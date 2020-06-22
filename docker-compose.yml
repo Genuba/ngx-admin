@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  ab.clientth:
+    build: "./"
+    container_name: "ab.clientth"
+    volumes:
+      - ./:/app
+    ports:
+      - "4300:4200"
